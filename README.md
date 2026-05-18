@@ -1,5 +1,7 @@
 # Wololoo — an Obsidian theme
 
+![Wololoo screenshot](screenshot.png)
+
 A warm, focused theme for [Obsidian](https://obsidian.md). Wololoo is a remix of
 [Catppuccin for Obsidian](https://github.com/catppuccin/obsidian): same palette
 power and Style Settings options, tuned for everyday writing and note-taking.
