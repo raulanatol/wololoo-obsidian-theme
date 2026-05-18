@@ -15,7 +15,7 @@ power and Style Settings options, tuned for everyday writing and note-taking.
 
 ## Install
 
-### From the Community Themes browser *(coming soon)*
+### From the Community Themes browser
 
 `Settings → Appearance → Manage → Browse`, search for **Wololoo**, install and apply.
 
