@@ -2,3 +2,28 @@
 .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
     display: none;
 }
+
+/* People / Company link-type icons */
+a.internal-link[data-link-type~="people"]::before {
+    content: "👤 ";
+}
+
+a.internal-link[data-link-type~="person"]::before {
+    content: "👤 ";
+}
+
+a.internal-link[data-link-type~="company"]::before {
+    content: "🏢 ";
+}
+
+span[data-link-type="people"] > span::before {
+    content: '👤 ';
+}
+
+span[data-link-type="person"] > span::before {
+    content: '👤 ';
+}
+
+span[data-link-type="company"] > span::before {
+    content: '🏢 ';
+}
