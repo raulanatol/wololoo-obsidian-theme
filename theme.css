@@ -635,10 +635,11 @@ name: "Catppuccin: Icon Styles"
 id: catppuccin-icon-styles
 settings:
   -
-    id: ctp-icon-hide
-    title: Hide icons
-    description: Hide icons styled or created by the theme. May solve compatibility issues between the theme and other third party plugins. Currently applies to folder icons in the file sidebar.
+    id: ctp-folder-icons
+    title: Show folder icons
+    description: Show the folder icons drawn by the theme in the file sidebar. Off by default to avoid duplicate icons when using icon plugins such as Iconize.
     type: class-toggle
+    default: false
 */
 /* @settings
 name: "Catppuccin: Interface Styles"
@@ -2237,7 +2238,7 @@ body {
 /*
 * Open folder
 */
-.nav-folder .nav-folder-title .nav-folder-title-content::before {
+.ctp-folder-icons .nav-folder .nav-folder-title .nav-folder-title-content::before {
     display: inline-block;
     width: var(--icon-xs);
     height: var(--icon-xs);
@@ -2245,14 +2246,6 @@ body {
     content: "";
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
     transition: -webkit-mask-image 0.2s ease;
-}
-
-/*
-* Hide icons with Style Settings
-*/
-.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
-.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-    display: none;
 }
 
 /*
